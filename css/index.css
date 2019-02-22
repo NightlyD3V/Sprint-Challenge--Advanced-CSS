@@ -170,6 +170,25 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.header nav {
+  display: flex;
+  justify-content: space-around;
+}
+.header nav a {
+  text-decoration: none;
+  color: #23293B;
+  padding: 10px;
+}
 .home .intro h2 {
   padding: 15px;
 }
