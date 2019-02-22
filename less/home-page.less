@@ -1,21 +1,18 @@
 // Home Content
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
+  .header-mixin();
   h1 {
     font-size: 3rem;
     margin-bottom: 10px;
   }
   nav {
     display: flex;
-    justify-content: space-around;
   }
   nav a {
     text-decoration: none;
+    font-size: 1.2rem;
     color: @ebony-clay;
-    padding: 10px;
+    padding: 10px 10px 2px 10px;
   }
 }
 .home {
@@ -99,7 +96,7 @@
       }
 
       .btn {
-        .btn-mixin();
+        .btn-mixin(50%);
         @media @mobile {
           order: 0;
           width: 100%;
