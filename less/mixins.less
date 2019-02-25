@@ -1,1 +1,32 @@
 // Mixins Here
+.btn-mixin(@width: 50%, @color: @porcelain) {
+    width: @width;
+    text-align: center;
+    background-color: @btn-bg-color;
+    color: @color;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover {
+        background-color: @porcelain;
+        color: @btn-bg-color;
+    }
+}
+.header-mixin() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-between;
+    padding: 10px;
+}
+//CSS3 animation 
+.slide-right(){
+    transition: 1s;
+    left: 0px; 
+}
+.fade-in() {
+    transition: opacity 2s;
+}
+.pop-up() {
+    transition: height 3s;
+}
